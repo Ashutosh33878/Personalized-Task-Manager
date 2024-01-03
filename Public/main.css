@@ -1,0 +1,67 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.bg-color-1{
+    background-color: black;
+}
+
+.bg-color-2{
+    background-color: #082032;
+}
+
+.bg-color-3{
+    background-color: #334756;
+}
+
+.bg-color-4{
+    background-color: #8da5b3;
+}
+
+.color-1{
+    color: black;
+}
+
+.color-2{
+    color: #082032;
+}
+
+.color-3{
+    color: #334756;
+}
+
+.color-4{
+    color: white;
+}
+
+.none{
+    list-style: none;
+}
+
+input[type=checkbox]:checked + label {
+    text-decoration: line-through;
+}
+
+@media only screen and (min-width: 720px){
+    .sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+
+    .sticky-nav {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 67.6px;
+    }
+}
+
+.form {
+    margin: 50px;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 5%;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.333);
+}
+

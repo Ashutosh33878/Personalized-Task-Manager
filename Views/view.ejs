@@ -1,0 +1,50 @@
+<%- include("partials/header.ejs") %>
+
+<nav class="navbar navbar-expand-sm mb-3 sticky-nav p-0" style="background-color: rgba(255, 255, 255, 0.55);">
+    <div class="container-fluid">
+      <span class="navbar-brand">Select Category</span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <button class="nav-link">Realtime</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link">High</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link">Above normal</button>
+          </li>   
+          <li class="nav-item">
+            <button class="nav-link">Normal</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link">Below normal</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link">Low</button>
+          </li> 
+        </ul>
+      </div>
+    </div>
+</nav>
+
+<div class="d-flex flex-column bg-color-3 m-3">
+    <span class="fs-5 fw-semibold p-3 bg-color-2 color-4">To-do List</span>
+    <div style="height: fit-content; overflow-y: scroll;">
+        <form>
+            <ul class="list-group">
+                <% tasksList.forEach((task) => { %>
+                    <div class="list-group-item py-3 lh-sm">
+                        <input type="checkbox">
+                        <label>
+                            <%= task %>
+                        </label>
+                    </div>
+                <% }) %>
+            </ul>
+        </form>
+    </div>
+</div>

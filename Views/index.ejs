@@ -1,0 +1,37 @@
+<%- include("partials/header.ejs") %>
+
+<form class="row g-3 bg-color-2 color-4 form col-md-6" action="/create" method="POST">
+  <h2 class="col-12 pb-2">Create Task</h2>
+  <div class="col-md-6 p-3">
+    <label for="newTask" class="form-label">Title</label>
+    <input type="text" name="newTask" placeholder="Running" class="form-control">
+  </div>
+  <div class="col-md-6 p-3">
+    <label for="inputState" class="form-label">Category</label>
+    <select id="inputState" class="form-select">
+      <option selected>Realtime</option>
+      <option>High</option>
+      <option>Above normal</option>
+      <option>Normal</option>
+      <option>Below normal</option>
+      <option>Low</option>
+    </select>
+  </div>
+  <div class="col-12 p-3">
+    <label for="inputDescription" class="form-label">Description</label>
+    <input type="text" class="form-control" id="inputDescription" placeholder="About the task">
+  </div>
+  <div class="col-md-6 p-3">
+    <label for="inputDeadline" class="form-label">Deadline</label>
+    <input type="text" class="form-control" id="inputDeadline" placeholder="12/04/2000">
+  </div>
+  <div class="col-md-6 p-3">
+    <label for="inputRemainder" class="form-label">Set Remainder</label>
+    <input type="text" class="form-control" id="inputRemainder" placeholder="12/04/2000">
+  </div>
+  <div class="col-12 p-3">
+    <button type="submit" class="btn btn-outline-light col-12">Add Task</button>
+  </div>
+</form>
+
+<%- include("partials/footer.ejs") %>
